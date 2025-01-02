@@ -13,6 +13,7 @@ public interface IWebAppLogger
     void LogError(string message, [CallerLineNumber] int lineNumber = 0, [CallerFilePath] string path = null,
         [CallerMemberName] string caller = null);
 }
+
 public class WebAppLogger : IWebAppLogger
 {
     public void LogInfo(string message, [CallerLineNumber] int lineNumber = 0, [CallerFilePath] string path = null,

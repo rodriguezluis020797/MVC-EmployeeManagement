@@ -1,20 +1,26 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using EmployeeManagement.Models;
+using EmployeeManagement.Models.CoreModels;
+using EmployeeManagement.Models.DTOModels;
+using EmployeeManagement.Tools;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagement.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly IWebAppLogger _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IWebAppLogger logger)
     {
         _logger = logger;
     }
 
     public IActionResult Index()
     {
+        _logger.LogInfo("+");
+        
+        _logger.LogInfo("-");
         return View();
     }
 
