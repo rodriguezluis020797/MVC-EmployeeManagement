@@ -7,11 +7,11 @@ namespace EmployeeManagement.Models.CoreModels;
 [Table("Supervisor")]
 public class SupervisorModel
 {
-    [Key] public long SupervisorId { get; set; } = default;
-    public string FirstName { get; set; } = default;
-    public string LastName { get; set; } = default;
-    public string Phone { get; set; } = default;
-    public string Email { get; set; } = default;
+    [Key] public long SupervisorId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Phone { get; set; }
+    public string Email { get; set; }
 
     public void AssignObject(SupervisorModelDTO supervisor)
     {

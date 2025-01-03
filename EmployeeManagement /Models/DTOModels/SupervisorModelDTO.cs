@@ -4,12 +4,12 @@ namespace EmployeeManagement.Models.DTOModels;
 
 public class SupervisorModelDTO
 {
-    public string SupervisorId { get; set; } = default;
-    public string FirstName { get; set; } = default;
-    public string LastName { get; set; } = default;
+    public string SupervisorId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
     public string FullName => $"{FirstName} {LastName}";
-    public string Phone { get; set; } = default;
-    public string Email { get; set; } = default;
+    public string Phone { get; set; }
+    public string Email { get; set; }
 
     public void AssignObject(SupervisorModel supervisor)
     {
